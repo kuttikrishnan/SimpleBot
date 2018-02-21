@@ -23,7 +23,7 @@ namespace SimpleBot.Dialogs
             int length = (activity.Text ?? string.Empty).Length;
 
             // return our reply to the user
-            await context.PostAsync($"You sent {activity.Text} which was {length} characters");
+            await context.PostAsync($"You sent {activity.Text} which was {length} characters Test");
 
             context.Wait(MessageReceivedAsync);
         }
